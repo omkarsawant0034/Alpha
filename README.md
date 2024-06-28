@@ -1,6 +1,6 @@
-# Hii,Omkar Sawant here ! Hope you are doing well
-##Each day i will try to solve 3 or questions based on DSA in Java Programming Language.
-##I will Update this README file each day as proof of it 
+# Hii,Omkar Sawant here ! Hope you are doing well <br>
+Each day i will try to solve 3 or questions based on DSA in Java Programming Language. <br>
+I will Update this README file each day as proof of it. 
 # DAY 
   1.20/6 <br>
   2.21/6 <br>
