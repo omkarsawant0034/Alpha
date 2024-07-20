@@ -1,5 +1,7 @@
 //SinglyLL
 
+import java.util.Scanner;
+
 public class LinkedList {
     
     public class  Node{
@@ -160,32 +162,89 @@ public class LinkedList {
         temp.next = temp.next.next;
         Size--;
     }
+
+    public void Display(){
+        LinkedList ll = new LinkedList();
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ENTER YOUR CHOICE : ");
+        System.out.println("Enter 1 : Add Node at First");
+        System.out.println("Enter 2 : Add Node at Last");
+        System.out.println("Enter 3 : Add Node at Position");
+        System.out.println("Enter 4 : Delete Node From First");
+        System.out.println("Enter 5 : Delete Node From Last");
+        System.out.println("Enter 6 : Delete Node From Position");
+        System.out.println("Enter 7 : Print all Nodes");
+        System.out.println("Enter 8 : Exit");
+        
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                System.out.println("Enter Data to Insert : ");
+                int data1 = sc.nextInt();
+                ll.AddFirst(data1);
+                Display();
+            case 2:
+                System.out.println("Enter Data to Insert : ");
+                int data2 = sc.nextInt();
+                ll.AddLast(data2);
+                Display();
+            case 3:
+                System.out.println("Enter Data to Insert : ");
+                int data3 = sc.nextInt();
+                System.out.println("Enter Position to Insert : ");
+                int pos = sc.nextInt();
+                ll.AddMiddle(data3, pos);
+                Display();
+            case 4:
+                ll.RemoveFirst();
+                Display();
+            case 5:
+                ll.RemoveLast();
+                Display();
+            case 6:
+                System.out.println("Enter the Position to Insert : ");
+                int pos1 = sc.nextInt();
+                ll.RemoveMiddle(pos1);
+                Display();
+            case 7:
+                ll.PrintLL();
+                Display();
+        
+            case 8:
+                System.out.println("******** EXITED FROM LL********");
+                break;
+            default :  
+                System.out.println("******** ENTER VALID CASE ********!!");
+                System.out.println();
+                Display();
+        }
+
+        sc.close();
+    }
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
-
-        ll.AddFirst(2);
-        ll.AddFirst(1);
+        ll.Display();
+        // ll.AddFirst(2);
+        // ll.AddFirst(1);
         // ll.PrintLL();
 
-        ll.AddLast(3);
-        ll.AddLast(4);
+        // ll.AddLast(3);
+        // ll.AddLast(4);
         // ll.PrintLL();
 
-        ll.AddMiddle(5, 2);
-        ll.AddMiddle(6, 3);
-        ll.AddMiddle(7, 7);
-        ll.PrintLL();
+        // ll.AddMiddle(5, 2);
+        // ll.AddMiddle(6, 3);
+        // ll.AddMiddle(7, 7);
+        // ll.PrintLL();
 
-        
-        
-        ll.RemoveFirst();
-        ll.PrintLL();
-        
-        ll.RemoveLast();
-        ll.PrintLL();
+        // ll.RemoveFirst();
+        // ll.PrintLL();
 
-        ll.RemoveMiddle(2);
-        ll.PrintLL();
+        // ll.RemoveLast();
+        // ll.PrintLL();
+
+        // ll.RemoveMiddle(2);
+        // ll.PrintLL();
     }
 }
  

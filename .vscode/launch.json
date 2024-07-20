@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "lastOcc",
+      "request": "launch",
+      "mainClass": "lastOcc",
+      "projectName": "Alpha_6c9c8dfb"
+    },
+    {
+      "type": "java",
       "name": "StringCompression",
       "request": "launch",
       "mainClass": "StringCompression",
