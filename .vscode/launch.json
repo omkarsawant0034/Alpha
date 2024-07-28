@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "RotateList",
+      "request": "launch",
+      "mainClass": "RotateList",
+      "projectName": "Alpha_6c9c8dfb"
+    },
+    {
+      "type": "java",
       "name": "lastOcc",
       "request": "launch",
       "mainClass": "lastOcc",
