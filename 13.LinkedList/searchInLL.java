@@ -42,10 +42,12 @@ public class searchInLL {
 
         if (pos == 0) {
             AddFirst(val);
+            return;
         }
 
         if (pos >= Size) {
             AddLast(val);
+            return;
         }
 
         Node newNode = new Node(val);
