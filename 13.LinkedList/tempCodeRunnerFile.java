@@ -1,2 +1,3 @@
-
-        // LL.AddMiddle(4, 1);
+if (slow == fast) {
+            // return true;
+            // }
